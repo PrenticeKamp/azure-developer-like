@@ -19,6 +19,11 @@
 		<spring-cloud-azure.version>4.3.0</spring-cloud-azure.version>
   </properties>  
   <dependencies> 
+    <dependency>
+      <groupId>com.azure.spring</groupId>
+      <artifactId>azure-spring-boot-starter-cosmos</artifactId>
+      <version>3.8.0</version>
+    </dependency>
     <dependency> 
       <groupId>org.springframework.boot</groupId>  
       <artifactId>spring-boot-starter-thymeleaf</artifactId> 
@@ -59,11 +64,6 @@
 			<artifactId>azure-spring-boot-starter-cosmos</artifactId>
 			<version>3.8.0</version>
 		</dependency>
-    <dependency>
-      <groupId>com.azure.spring</groupId>
-      <artifactId>spring-cloud-azure-starter-storage-blob</artifactId>
-      <version>4.3.0</version>
-    </dependency>
   </dependencies>  
   <build> 
     <plugins> 
@@ -85,15 +85,15 @@
         <version>2.5.0</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
-          <subscriptionId>195d944b-74f6-4cb3-acb2-fc20eac1c87a</subscriptionId>
-          <resourceGroup>af-klm-az-204</resourceGroup>
-          <appName>af-klm-az-204-wa</appName>
-          <pricingTier>P1v2</pricingTier>
+          <subscriptionId>16cfc856-c2f1-4103-80c3-8deba1743963</subscriptionId>
+          <resourceGroup>rg_trainee_10</resourceGroup>
+          <appName>az204wb10</appName>
+          <pricingTier>P1v3</pricingTier>
           <region>westeurope</region>
-          <appServicePlanName>af-klm-az-204-asp</appServicePlanName>
-          <appServicePlanResourceGroup>af-klm-az-204</appServicePlanResourceGroup>
+          <appServicePlanName>ASP-rgtrainee10-9962</appServicePlanName>
+          <appServicePlanResourceGroup>rg_trainee_10</appServicePlanResourceGroup>
           <runtime>
-            <os>Linux</os>
+            <os>Windows</os>
             <javaVersion>17.0.2</javaVersion>
             <webContainer>Java SE</webContainer>
           </runtime>
